@@ -26,32 +26,48 @@ https://www.ctc-g.co.jp/solutions/outsystems/
 ![image](https://github.com/katajunn/OutSystems/assets/120441205/240a57c5-ab1f-416b-b3c3-eac9f3469f7d)
 ![image](https://github.com/katajunn/OutSystems/assets/120441205/6af8ac62-f8b9-4554-bed0-7c0d9e6dae07)
 
-3. Service Studioが起動されたことを確認します。
+3. このような画面になれば Service Studio の起動は完了です！
 
-![](./images/003.png)
+![image](https://github.com/katajunn/OutSystems/assets/120441205/1b6c2bbe-9a10-42a7-8f64-ca7f8b5ce06b)
 
-## 新規アプリケーションの作成
+## タスク管理アプリケーションの実装
+
+OutSystems で実装をする場合、以下の2つを作成する必要があります。
+* Application
+  * モジュールをまとめた単位で OutSystems 独自の用語。複数のモジュールを内包することができる。一般用語の"アプリケーション"と混同しがちなため、英語で表記します。
+  * Java でいうと EAR のような存在。
+* Module
+  * Web アプリケーションや共通処理の実装成果物。
+  * Java でいうと WAR や JAR のような存在。
+
+それでは、それぞれについて進めていきましょう！
+
+### 新規 Application の作成
 
 1. Service Studioで [New Application] をクリックします。
 
-![](./images/004.png)
+![image](https://github.com/katajunn/OutSystems/assets/120441205/1dec0788-359e-49ea-87ce-43d276783f64)
 
-2. [From scratch] を選択して [Next] ボタンをクリックします。今回はスクラッチで開発しますが、予め用意したテンプレートをベースにアプリを構築することも可能です。
+2. [From scratch] を選択して [Next] ボタンをクリックします。<br/>
+※今回はスクラッチで（＝ゼロから）開発しますが、予め用意したテンプレートをベースに実装を開始することも可能です。
 
-![](./images/005.png)
+![image](https://github.com/katajunn/OutSystems/assets/120441205/fb291814-d8e6-44d4-b137-8e0a8d7b3b29)
 
-3. [Reactive Web App] を選択して [Next] ボタンをクリックします。ここでのReactive Web AppとはReactで作られたWebアプリのことです。
-![](./images/006.png)
+3. [Reactive Web App] を選択して [Next] ボタンをクリックします。<br/>
+Reactive Web App とはレスポンシブな Single Page Application のことを意味しています。
 
-4. 任意のアプリ名を設定します。このチュートリアルでは [MyFirstApp] としています。アプリ名を設定したら [Create App] ボタンをクリックします。
+![image](https://github.com/katajunn/OutSystems/assets/120441205/cdb70ec2-ab99-43f8-a045-8aab43a4d87b)
 
-![](./images/007.png)
+4. 任意の Application 名を設定します。ここでは [TODOList] としていますが、好きな文字列で大丈夫です。Application 名を設定したら [Create App] ボタンをクリックします。<br/>
+ここではデフォルト選択されている色（毎回変わります）から変えていませんが、好きな色やアイコンも設定して頂いてももちろん OK です。
 
-5. 下図のようなアプリケーション画面が表示されればOKです。
+![image](https://github.com/katajunn/OutSystems/assets/120441205/aaf1d276-9b70-41c1-9a0a-0b23212ecba8)
 
-![](./images/008.png)
+5. このような画面になれば Application の作成は完了です！
 
-## モジュールの開発
+![image](https://github.com/katajunn/OutSystems/assets/120441205/a9e24e08-2ab1-4e98-8b90-2c5d137e688b)
+
+### モジュールの開発
 
 OutSystemsでは、アプリケーションというプロジェクトの中に、モジュールと呼ばれるプログラムの実態がぶら下がる形でアプリケーションが構成されます。
 
