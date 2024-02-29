@@ -224,19 +224,27 @@ Data タブで Task Entity を展開してください。OutSystems で Entity �
 
    ![image](https://github.com/katajunn/OutSystems/assets/120441205/57f5769d-7c58-4a0a-83a0-200c89457d6c)
 
-10. ボタンが緑になりましたね。
+10. ボタンが緑になりましたね。Publish して動作確認をしてみましょう。
+
+11. しかし、何かが変です。タスクを作って Delete を押下してみても何も起こりません。でも画面をリフレッシュさせるとデータは消えているのでロジックは正しく動いていそうです。
+   - Delete ボタン押下直後。データが消えていない。
+      ![image](https://github.com/katajunn/OutSystems/assets/120441205/ceac3e21-733d-4025-9e02-642d0c01e95d)
+   - リフレッシュ（F5等）後。データは消えている。
+      ![image](https://github.com/katajunn/OutSystems/assets/120441205/9ea87099-9b10-40ff-a3d4-548fc00099bc)
+
+12. 実は、先ほど実装した DeleteOnClick に足りないものがあったのです。確かにデータは削除しているのですが、その後に「データ取得処理をもう一度実行する」という処理がありませんでした。<br/>
+ここにその処理を実装しましょう。左側から [Reflesh Data] をドラッグ&ドロップします。
+
+   ![image](https://github.com/katajunn/OutSystems/assets/120441205/1ca96334-7b3a-477e-967a-2f4d682f1be1)
+
+13. どれをもう一回するの？と聞かれるので、[GetTasks] を選択して [Select] を押下しましょう。これはタスク一覧画面を自動生成したときに一緒に作成された、Task Entity から一覧データを取得してくる処理です。
+
+    ![image](https://github.com/katajunn/OutSystems/assets/120441205/d33a4e8e-41a7-4a63-a214-ce91d08ca998)
+
+14. この状態でもう一度 Publish してみて動作を確認してください。今度はうまくいっているはずです。
 
 ## さいごに
-おつかれさまでした。これでOutSystemsを使い始めるためのチュートリアルは完了です。 すでに基本は学びましたので、応用編としていろいろなアプリ作成を試してみてください。
-OutSystemsでは、定期的にJump Startというハンズオンワークショップを行っていますので、ご興味ある方はこちらもチェックしてみてくださいね！
+これで QuickStart は完了です。 OutSystems は無償で様々な学習リソースを提供しているため、ぜひ色々なアプリ作成を試してみてください。
+より高度な内容を学べる Jump Start というハンズオンワークショップも定期的に行っていますので、ご興味ある方はこちらもチェックしてみてくださいね！
 
-[OutSystems Jump Start - Japan](https://www.outsystems.com/ja-jp/events/jump-start/apac/japan/)
-
-
-また、社内向けなど個別にハンズオンワークショップや、OutSystemsを使ったハッカソンをご希望の方は以下までご連絡ください！
-
-### 萩野たいじ
-Developer Advodate/Community Manager at OutSystems
-taiji.hagino@outsystems.com
-[Twitter](https://twitter.com/taiponrock)
-[LinkedIn](https://www.linkedin.com/in/taiponrock/)
+[OutSystems Jump Start](https://www.ctc-g.co.jp/solutions/outsystems/service/hands-on/)
