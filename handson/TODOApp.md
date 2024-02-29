@@ -6,8 +6,7 @@ OutSystems をこれから使う方に向けた、アプリケーション開発
 タスクを作成・編集・削除できるシンプルなタスク管理アプリケーションが完成します。
 一覧画面と詳細画面という2画面構成です。
 
-![](./images/000.png)
-
+![image](https://github.com/katajunn/OutSystems/assets/120441205/fdfc839c-bc6f-428b-8fc9-aaf79fced506)
 
 本チュートリアルはService StudioのHelpメニューから「Build an App in 5 min tutorial」を選択することで、ガイドのウィザードを起動できます。
 Service Studioのメニューから実施するチュートリアルはモバイルアプリですが、こちらではReactive Web Appバージョンで作成していきます。
