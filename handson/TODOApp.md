@@ -3,26 +3,28 @@
 OutSystems をこれから使う方に向けた、アプリケーション開発を体験できるクイックスタートです。
 
 ## 成果物
-タスクを作成・編集・削除できるシンプルなタスク管理アプリケーションが完成します。
+タスクを作成・編集・削除できるシンプルなタスク管理アプリケーションが完成します。<br/>
 一覧画面と詳細画面という2画面構成です。
 
 ![image](https://github.com/katajunn/OutSystems/assets/120441205/fdfc839c-bc6f-428b-8fc9-aaf79fced506)
 
-本チュートリアルはService StudioのHelpメニューから「Build an App in 5 min tutorial」を選択することで、ガイドのウィザードを起動できます。
+本チュートリアルは Service Studio の Help メニューから「Build an App in 5 min tutorial」を選択することで、ガイドのウィザードを起動できます。
 Service Studioのメニューから実施するチュートリアルはモバイルアプリですが、こちらではReactive Web Appバージョンで作成していきます。
 
 ## 事前準備
-OutSystems PE(Personal Edition)アカウント作成（無料）
-https://outsyste.ms/3LshMqW
+OutSystems PE(Personal Environment) アカウント作成 ※無償<br/>
+このページの「無料版ダウンロード」ボタンより作成頂けます。
+https://www.ctc-g.co.jp/solutions/outsystems/
 
-## Service Studioの起動
-1. 事前準備でインストールしたOutSystemsの統合開発環境（Service Studioといいます）を起動します。
+## Service Studio の起動
+1. 事前準備でインストールした OutSystems の開発環境（Service Studio）を起動します。
 
-![](./images/001.png)
+![image](https://github.com/katajunn/OutSystems/assets/120441205/dadad98f-7c12-4584-b9e7-268d1a73834b)
 
-2. 自分のOutSystems環境へログインします。
+2. 事前準備で作成した PE 環境へログインします。
 
-![](./images/002.png)
+![image](https://github.com/katajunn/OutSystems/assets/120441205/240a57c5-ab1f-416b-b3c3-eac9f3469f7d)
+![image](https://github.com/katajunn/OutSystems/assets/120441205/6af8ac62-f8b9-4554-bed0-7c0d9e6dae07)
 
 3. Service Studioが起動されたことを確認します。
 
