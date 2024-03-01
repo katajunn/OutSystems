@@ -8,9 +8,6 @@ OutSystems をこれから使う方に向けた、アプリケーション開発
 
    ![image](https://github.com/katajunn/OutSystems/assets/120441205/fdfc839c-bc6f-428b-8fc9-aaf79fced506)
 
-本チュートリアルは Service Studio の Help メニューから「Build an App in 5 min tutorial」を選択することで、ガイドのウィザードを起動できます。
-Service Studioのメニューから実施するチュートリアルはモバイルアプリですが、こちらではReactive Web Appバージョンで作成していきます。
-
 ## 事前準備
 OutSystems PE(Personal Environment) アカウント作成 ※無償<br/>
 このページの「無料版ダウンロード」ボタンより作成頂けます。
